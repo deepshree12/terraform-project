@@ -8,7 +8,7 @@ master_password = var.master_password
 skip_final_snapshot = var.skip_final_snapshot
 backup_retention_period = var.backup_retention_period
 db_subnet_group_name = var.db_subnet_group_name
-
+vpc_security_group_ids = var.vpc_security_group_ids
 
 }
 

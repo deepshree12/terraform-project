@@ -52,4 +52,5 @@ engine_version = var.engine_version
 skip_final_snapshot = var.skip_final_snapshot
 backup_retention_period = var.backup_retention_period
 db_subnet_group_name = aws_db_subnet_group.aurora-subnet-1.name
+vpc_security_group_ids = [aws_security_group.aurora_security.id]
 }
