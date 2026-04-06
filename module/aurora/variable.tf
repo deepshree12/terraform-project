@@ -62,3 +62,11 @@ variable "vpc_security_group_ids" {
   description = "vpc security group ids"
 
 }
+
+variable "db_cluster_parameter_group_name" {
+
+type = string
+description = "parameter group"
+
+
+}
