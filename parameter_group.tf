@@ -1,7 +1,7 @@
 resource "aws_rds_cluster_parameter_group" "aurora_parameter" {
 
-name = "aurora-parameter-group"
-family = "aurora-postgresql15"
+name = "aurora-parameter-group16"
+family = "aurora-postgresql16"
 description = "parameter group for the postgresql"
 
 parameter  {
@@ -21,7 +21,11 @@ parameter  {
 
 }
 
+lifecycle {
 
+create_before_destroy = true
+
+}
 
 }
 

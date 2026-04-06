@@ -54,4 +54,6 @@ backup_retention_period = var.backup_retention_period
 db_subnet_group_name = aws_db_subnet_group.aurora-subnet-1.name
 vpc_security_group_ids = [aws_security_group.aurora_security.id]
 db_cluster_parameter_group_name = aws_rds_cluster_parameter_group.aurora_parameter.name
+apply_immediatly = var.apply_immediatly
+allow_major_upgrade = var.allow_major_upgrade
 }

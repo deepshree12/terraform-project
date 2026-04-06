@@ -70,3 +70,17 @@ description = "parameter group"
 
 
 }
+
+variable "apply_immediatly" {
+
+type = bool
+description = "apply immediatly"
+
+}
+
+variable "allow_major_upgrade" {
+
+type = bool
+description = "allow major version upgrade"
+
+}
