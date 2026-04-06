@@ -70,3 +70,10 @@ description = "parameter group"
 
 
 }
+
+variable "apply_immediatly" {
+
+type = bool
+description = "apply immediatly"
+
+}

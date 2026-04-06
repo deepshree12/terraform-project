@@ -49,10 +49,10 @@ description = "backup retention period"
 
 }
 
-/*variable "db_subnet_group_name" {
+variable "apply_immediatly" {
 
-  type = string
-  description = "db subnet group name"
+  type = bool
+  description = "apply immediatly"
 
 }
-*/
+
