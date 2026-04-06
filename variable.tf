@@ -56,3 +56,9 @@ variable "apply_immediatly" {
 
 }
 
+variable "allow_major_upgrade" {
+
+type = bool
+description = "allow major version upgrade"
+
+}
