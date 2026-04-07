@@ -58,13 +58,13 @@ apply_immediatly = var.apply_immediatly
 allow_major_upgrade = var.allow_major_upgrade
 }
 
-output "writer_endpoint" {
+output "writer_instance" {
 
-value = module.deep.writer-instance
+value = module.deep.writer_endpoint
 description = "writer instance endpoint"
 }
 
-output "reader_endpoint" {
+output "reader_instance" {
 
 value = module.deep.reader_endpoint
 
