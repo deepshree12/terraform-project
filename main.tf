@@ -57,3 +57,15 @@ db_cluster_parameter_group_name = aws_rds_cluster_parameter_group.aurora_paramet
 apply_immediatly = var.apply_immediatly
 allow_major_upgrade = var.allow_major_upgrade
 }
+
+output "writer_endpoint" {
+
+value = module.deep.writer-instance
+description = "writer instance endpoint"
+}
+
+output "reader_endpoint" {
+
+value = module.deep.reader_endpoint
+
+}
