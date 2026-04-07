@@ -15,9 +15,19 @@ allow_major_version_upgrade = var.allow_major_upgrade
 
 }
 
-resource "aws_rds_cluster_instance" "deep_aurora_1" {
+resource "aws_rds_cluster_instance" "writer" {
 
 identifier = "aurora-cluster-1"
+cluster_identifier = aws_rds_cluster.deep-aurora.id
+instance_class = "db.t3.medium"
+engine = aws_rds_cluster.deep-aurora.engine
+
+
+}
+
+resource "aws_rds_cluster_instance" "reader" {
+
+identifier = "reader"
 cluster_identifier = aws_rds_cluster.deep-aurora.id
 instance_class = "db.t3.medium"
 engine = aws_rds_cluster.deep-aurora.engine
